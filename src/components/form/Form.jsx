@@ -12,6 +12,17 @@ const Form = () => {
 	const [popup, setPopup] = useState(false)
 	const [queryType, setQueryType] = useState('')
 
+	useEffect(() => {
+		const userAgent = navigator.userAgent || navigator.vendor || window.opera
+		const root = document.documentElement
+
+		if (/android/i.test(userAgent)) {
+			root.classList.add('android')
+		} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+			root.classList.add('ios')
+		}
+	}, [])
+
 	const toggleMenu = (value = null) => {
 		setPopup(!popup)
 		if (value) {

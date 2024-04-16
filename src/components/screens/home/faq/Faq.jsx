@@ -12,15 +12,7 @@ const Faq = () => {
 	}, [])
 	return (
 		<div className={'container'}>
-			<h2
-				className={`text-white ${
-					document.documentElement.classList.contains('ios')
-						? 'text-[40px]'
-						: 'text-[93px]'
-				} text-center mb-2 `}
-			>
-				FAQ
-			</h2>
+			<h2 className={`text-white text-[33px] text-center mb-2 `}>FAQ</h2>
 			<div className={'flex flex-col '}>
 				{faqItems.map((item, index) => (
 					<FaqItem

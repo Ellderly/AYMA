@@ -19,9 +19,15 @@ const FaqItem = ({
 				onClick={() => setIsOpen(!isOpen)}
 			>
 				<div
-					className={`font-druk flex flex-col overflow-hidden items-center justify-center w-full text-[10px] lg:text-[17px]  ${
-						titleColor ? titleColor : isOpen ? 'text-orange' : 'text-white'
-					} `}
+					className={`font-druk flex flex-col overflow-hidden items-center justify-center w-full 
+					${
+						document.documentElement.classList.contains('ios')
+							? 'text-[18px]'
+							: 'text-[10px]'
+					}
+					 lg:text-[17px]  ${
+							titleColor ? titleColor : isOpen ? 'text-orange' : 'text-white'
+						} `}
 				>
 					<div className={`overflow-hidden w-full h-[100%] `}>
 						<div className={`${styles1} py-[8px] px-[10px]`}>

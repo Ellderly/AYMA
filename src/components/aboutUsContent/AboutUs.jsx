@@ -8,19 +8,13 @@ const AboutUs = () => {
 				<div className='flex flex-col gap-[50px] normal-case md:flex-row md:items-center'>
 					<div className='flex flex-col gap-[50px] basis-1/3'>
 						<div>
-							<h2
-								className={`font-druk ${
-									document.documentElement.classList.contains('ios')
-										? 'text-[38px]'
-										: 'text-[12px]'
-								} text-green lg:text-5xl`}
-							>
+							<h2 className='font-druk text-[35px] text-green lg:text-5xl'>
 								50+
 							</h2>
 							<p className={'lg:text-xl lg:mt-2'}>Реалізованих проєктів</p>
 						</div>
 						<div>
-							<h2 className='font-druk text-[32px] text-green lg:text-5xl'>
+							<h2 className='font-druk text-[35px] text-green lg:text-5xl'>
 								&lt;1 тижня
 							</h2>
 							<p className={'lg:text-xl lg:mt-2'}>
@@ -28,7 +22,7 @@ const AboutUs = () => {
 							</p>
 						</div>
 						<div>
-							<h2 className='font-druk text-[32px] text-green lg:text-5xl'>
+							<h2 className='font-druk text-[35px] text-green lg:text-5xl'>
 								100%
 							</h2>
 							<p className={'lg:text-xl lg:mt-2'}>Задоволених користувачів</p>

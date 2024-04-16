@@ -7,7 +7,8 @@ const Dropdown = ({ title, children, isOpen, toggleDropdown }) => {
 		<div className='my-4 '>
 			<button
 				onClick={() => toggleDropdown(title)} // Изменено для управления состоянием в Services
-				className={`px-4 py-2 rounded document.documentElement.classList.contains('ios')
+				className={`px-4 py-2 rounded ${
+					document.documentElement.classList.contains('ios')
 						? 'text-h-ios'
 						: 'text-h-android'
 				} text-left font-druk lg:text-[18px] lg:ml-[50px] ${

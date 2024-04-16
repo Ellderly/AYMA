@@ -51,7 +51,14 @@ const Footer = () => {
 									item.value.includes('@aymatech_contact')
 							)
 							.map((item, index) => (
-								<div key={index}>
+								<div
+									key={index}
+									className={`${
+										document.documentElement.classList.contains('ios')
+											? 'text-[18px]'
+											: 'text-[11px]'
+									}`}
+								>
 									{item.key} {item.value}
 								</div>
 							))}

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
 import Button from '../UI/button/Button'
 import Input from '../UI/Input/Input.jsx'
@@ -11,17 +11,6 @@ const Form = () => {
 	const [comment, setComment] = useState('')
 	const [popup, setPopup] = useState(false)
 	const [queryType, setQueryType] = useState('')
-
-	useEffect(() => {
-		const userAgent = navigator.userAgent || navigator.vendor || window.opera
-		const root = document.documentElement
-
-		if (/android/i.test(userAgent)) {
-			root.classList.add('android')
-		} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-			root.classList.add('ios')
-		}
-	}, [])
 
 	const toggleMenu = (value = null) => {
 		setPopup(!popup)
@@ -100,9 +89,12 @@ const Form = () => {
 									/>
 									<label
 										htmlFor='radio1'
-										className={
-											'flex items-center justify-between block-quest-wrapper transition-colors text-[10px] md:text-[15px] text-white font-druk py-[10px] px-[50px] cursor-pointer'
-										}
+										className={`flex items-center justify-between block-quest-wrapper transition-colors text-[10px] md:text-[15px] text-white font-druk py-[10px] px-[50px] cursor-pointer {
+											${
+												document.documentElement.classList.contains('ios')
+													? 'text-[20px]'
+													: 'text-[10px]'
+											}`}
 										onClick={() => toggleMenu('order_chatbot')}
 									>
 										Замовити чат-бота

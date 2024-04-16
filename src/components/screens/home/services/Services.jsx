@@ -20,8 +20,8 @@ const Dropdown = ({ title, children, isOpen, toggleDropdown }) => {
 			<div
 				className={`mt-2 ml-8 ${
 					document.documentElement.classList.contains('ios')
-						? 'text-sm-ios'
-						: 'text-sm-android'
+						? 'text-[24px]'
+						: 'text-[11px]'
 				} lg:text-[16px] text-green font-druk lg:absolute lg:right-[80px] lg:top-0 lg:w-[400px] lg:text-right lg:h-[300px] justify-between ${
 					isOpen ? 'flex flex-col gap-2' : 'hidden'
 				}`}

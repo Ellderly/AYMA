@@ -12,7 +12,7 @@ const AboutUs = () => {
 								className={`font-druk ${
 									document.documentElement.classList.contains('ios')
 										? 'text-[38px]'
-										: 'text-[32px]'
+										: 'text-[12px]'
 								} text-green lg:text-5xl`}
 							>
 								50+

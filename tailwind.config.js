@@ -44,7 +44,7 @@ export default {
 				kleemax: ['kleemax'],
 			},
 			fontSize: {
-				'sm-ios': '58px',
+				'sm-ios': '20px',
 				'sm-android': '11px',
 				// Добавьте другие размеры текста по аналогии
 			},

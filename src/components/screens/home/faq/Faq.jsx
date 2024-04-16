@@ -16,7 +16,7 @@ const Faq = () => {
 				className={`text-white ${
 					document.documentElement.classList.contains('ios')
 						? 'text-[40px]'
-						: 'text-[33px]'
+						: 'text-[93px]'
 				} text-center mb-2 `}
 			>
 				FAQ

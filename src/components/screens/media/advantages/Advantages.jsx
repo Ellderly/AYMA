@@ -29,7 +29,13 @@ const Advantages = ({
 					<div className='flex gap-[15px] md:gap-[40px] justify-end '>
 						<div className='flex flex-col gap-[23px] justify-around'>
 							<div className='translate-x-[30px] md:translate-x-[60px] lg:translate-x-[60px]'>
-								<h4 className='font-druk text-green text-[11px] md:text-[18px] lg:text-[24px]'>
+								<h4
+									className={`font-druk text-green ${
+										document.documentElement.classList.contains('ios')
+											? 'text-[20px]'
+											: 'text-[11px]'
+									} md:text-[18px] lg:text-[24px]`}
+								>
 									{block_1_h4}
 								</h4>
 								<p className='text-[6.8px] normal-case ml-auto w-[180px] tracking-widest md:text-[13px] lg:text-[16px] md:w-[50%]  lg:pt-[15px]'>
@@ -37,7 +43,13 @@ const Advantages = ({
 								</p>
 							</div>
 							<div className='translate-x-[15px] md:translate-x-[40px] lg:translate-x-[30px]'>
-								<h4 className='font-druk text-green text-[11px] md:text-[18px] lg:text-[24px]'>
+								<h4
+									className={`font-druk text-green ${
+										document.documentElement.classList.contains('ios')
+											? 'text-[20px]'
+											: 'text-[11px]'
+									} md:text-[18px] lg:text-[24px]`}
+								>
 									{block_2_h4}
 								</h4>
 								<p className='text-[6.8px] normal-case ml-auto w-[180px] tracking-widest md:text-[13px] lg:text-[16px] md:w-[50%]  lg:pt-[15px]'>
@@ -45,7 +57,13 @@ const Advantages = ({
 								</p>
 							</div>
 							<div>
-								<h4 className='font-druk text-green text-[11px] md:text-[18px] lg:text-[24px]'>
+								<h4
+									className={`font-druk text-green ${
+										document.documentElement.classList.contains('ios')
+											? 'text-[20px]'
+											: 'text-[11px]'
+									} md:text-[18px] lg:text-[24px]`}
+								>
 									{block_3_h4}
 								</h4>
 								<p className='text-[6.8px] normal-case ml-auto w-[180px] tracking-widest md:text-[13px] lg:text-[16px] md:w-[50%]  lg:pt-[15px]'>

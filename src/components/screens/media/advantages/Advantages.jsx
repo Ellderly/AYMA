@@ -33,7 +33,7 @@ const Advantages = ({
 									className={`font-druk text-green ${
 										document.documentElement.classList.contains('ios')
 											? 'text-[20px]'
-											: 'text-[11px]'
+											: 'text-[10px]'
 									} md:text-[18px] lg:text-[24px]`}
 								>
 									{block_1_h4}
@@ -47,7 +47,7 @@ const Advantages = ({
 									className={`font-druk text-green ${
 										document.documentElement.classList.contains('ios')
 											? 'text-[20px]'
-											: 'text-[11px]'
+											: 'text-[10px]'
 									} md:text-[18px] lg:text-[24px]`}
 								>
 									{block_2_h4}
@@ -61,7 +61,7 @@ const Advantages = ({
 									className={`font-druk text-green ${
 										document.documentElement.classList.contains('ios')
 											? 'text-[20px]'
-											: 'text-[11px]'
+											: 'text-[10px]'
 									} md:text-[18px] lg:text-[24px]`}
 								>
 									{block_3_h4}

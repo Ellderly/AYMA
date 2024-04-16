@@ -56,7 +56,13 @@ const Form = () => {
 									}
 									onClick={toggleMenu}
 								>
-									<span className='text-[10px] md:text-[15px] leading-4'>
+									<span
+										className={`${
+											document.documentElement.classList.contains('ios')
+												? 'text-[20px]'
+												: 'text-[10px]'
+										} md:text-[15px] leading-4`}
+									>
 										Оберіть ціль запиту
 									</span>
 									<img

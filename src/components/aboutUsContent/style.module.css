@@ -1,0 +1,48 @@
+.frame {
+	position: relative;
+}
+.frame:before {
+	height: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	content: ' ';
+}
+.frame:after {
+	height: 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	content: ' ';
+}
+.frame > p {
+	text-align: justify;
+	margin: 0;
+}
+.frame :first-child:before {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 10px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	content: ' ';
+}
+
+.frame :first-child:after {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 10px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	content: ' ';
+}

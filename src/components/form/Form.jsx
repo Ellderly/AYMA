@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Button from '../UI/button/Button'
 import Input from '../UI/Input/Input.jsx'

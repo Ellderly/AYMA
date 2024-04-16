@@ -77,7 +77,13 @@ const Tracker = () => {
 							className='absolute pointer-events-none right-0 top-0 w-[15px]'
 						/>
 						<div className='text-white flex flex-col gap-[18px]'>
-							<h4 className='font-druk z-10 text-[14px] md:text-[20px] lg:text-[30px] normal-case'>
+							<h4
+								className={`font-druk z-10  ${
+									document.documentElement.classList.contains('ios')
+										? 'text-22px]'
+										: 'text-[14px]'
+								} md:text-[20px] lg:text-[30px] normal-case`}
+							>
 								Налаштування <br /> трекерів
 							</h4>
 							<p className='text-[9px] md:text-[15px] lg:text-[20px]  normal-case z-10 tracking-widest'>
@@ -130,7 +136,13 @@ const Tracker = () => {
 							className='absolute pointer-events-none right-0 top-0 w-[15px]'
 						/>
 						<div className='text-white flex flex-col gap-[18px]'>
-							<h4 className='font-druk z-10 text-[14px] md:text-[20px] lg:text-[30px] normal-case'>
+							<h4
+								className={`font-druk z-10 ${
+									document.documentElement.classList.contains('ios')
+										? 'text-22px]'
+										: 'text-[14px]'
+								} md:text-[20px] lg:text-[30px] normal-case`}
+							>
 								Інтеграція <br /> та налаштування <br /> CRM-систем
 							</h4>
 							<p className='text-[9px] md:text-[15px] lg:text-[20px]  normal-case z-10 tracking-widest'>

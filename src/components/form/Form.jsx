@@ -112,9 +112,12 @@ const Form = () => {
 									/>
 									<label
 										htmlFor='radio2'
-										className={
-											'flex items-center justify-between block-quest-wrapper  transition-colors text-[10px] md:text-[15px] text-white font-druk py-[10px] px-[50px] cursor-pointer'
-										}
+										className={`flex items-center justify-between block-quest-wrapper transition-colors text-[10px] md:text-[15px] text-white font-druk py-[10px] px-[50px] cursor-pointer {
+											${
+												document.documentElement.classList.contains('ios')
+													? 'text-[20px]'
+													: 'text-[10px]'
+											}`}
 										onClick={() => toggleMenu('partnership')}
 									>
 										Стати партнером

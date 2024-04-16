@@ -64,50 +64,26 @@ const MediaServices = () => {
 						</svg>
 					</div>
 					<div className='text-green uppercase flex flex-col justify-around md:justify-between mt-[-10px] md:mt-0'>
-						<p
-							className={`font-druk ${
-								document.documentElement.classList.contains('ios')
-									? 'text-[20px]'
-									: 'text-[10px]'
-							} md:text-[18px] lg:text-[20px] tracking-widest md:w-[90%] lg:w-[70%]	translate-x-[-50px] md:md:translate-x-[-100px]`}
-						>
+						<p className='font-druk text-[10px] md:text-[18px] lg:text-[20px] tracking-widest md:w-[90%] lg:w-[70%]	translate-x-[-50px] md:md:translate-x-[-100px]'>
 							Розробку від А до Я:
 							<span className='font-ptMono tracking-widest text-white normal-case block mt-[10px]'>
 								Ми робимо все – від ідеї до запуску{' '}
 							</span>
 						</p>
-						<p
-							className={`font-druk  ${
-								document.documentElement.classList.contains('ios')
-									? 'text-[20px]'
-									: 'text-[10px]'
-							} md:text-[18px] lg:text-[20px] tracking-widest md:w-[90%] lg:w-[70%]	translate-x-[-30px] md:translate-x-[-60px]`}
-						>
+						<p className='font-druk text-[10px] md:text-[18px] lg:text-[20px] tracking-widest md:w-[90%] lg:w-[70%]	translate-x-[-30px] md:translate-x-[-60px]'>
 							Інтеграцію з вашими системами:
 							<span className='font-ptMono tracking-widest text-white normal-case block mt-[10px]'>
 								CRM-системи, трекери, платіжки та будь-які інші необхідні
 								системи
 							</span>
 						</p>
-						<p
-							className={`font-druk  ${
-								document.documentElement.classList.contains('ios')
-									? 'text-[20px]'
-									: 'text-[10px]'
-							} md:text-[18px] lg:text-[20px] tracking-widest md:w-[90%] lg:w-[70%]	translate-x-[-10px] md:translate-x-[-30px]`}
-						>
+						<p className='font-druk text-[10px] md:text-[18px] lg:text-[20px] tracking-widest md:w-[90%] lg:w-[70%]	translate-x-[-10px] md:translate-x-[-30px]'>
 							Персоналізацію:
 							<span className='font-ptMono tracking-widest text-white normal-case block mt-[10px]'>
 								Чат-бот буде створено під ваш бренд і специфічні потреби
 							</span>
 						</p>
-						<p
-							className={` font-druk ${
-								document.documentElement.classList.contains('ios')
-									? 'text-[20px]'
-									: 'text-[10px]'
-							} md:text-[18px] lg:text-[20px] tracking-widest md:w-[80%] lg:w-[70%]`}
-						>
+						<p className='font-druk text-[10px] md:text-[18px] lg:text-[20px] tracking-widest md:w-[80%] lg:w-[70%]'>
 							Підтримку та оновлення:
 							<span className='font-ptMono tracking-widest text-white normal-case block mt-[10px]'>
 								Безперебійна робота чат-ботів, завдяки технічній підтримці та

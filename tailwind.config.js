@@ -45,7 +45,7 @@ export default {
 			},
 			fontSize: {
 				'sm-ios': '58px',
-				'sm-android': '51px',
+				'sm-android': '11px',
 				// Добавьте другие размеры текста по аналогии
 			},
 			backgroundPosition: {

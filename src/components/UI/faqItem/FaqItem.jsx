@@ -31,7 +31,7 @@ const FaqItem = ({
 				>
 					<div className={`overflow-hidden w-full h-[100%] `}>
 						<div className={`${styles1} py-[8px] px-[10px]`}>
-							<span className='mr-[50px]'>{title}</span>
+							<span className={`mr-[50px]`}>{title}</span>
 						</div>
 					</div>
 				</div>

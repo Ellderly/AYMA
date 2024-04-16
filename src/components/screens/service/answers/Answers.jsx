@@ -6,14 +6,24 @@ const Answers = () => {
 			<FaqItem
 				title={'РОЗРОБКА ЧАТ-БОТІВ ПІД КЛЮЧ'}
 				hexagon={'hexagon'}
-				styles1={'answer-btn-bg text-[8px] md:text-[16px]'}
+				styles1={`answer-btn-bg ${
+					document.documentElement.classList.contains('ios')
+						? 'text-[15px]'
+						: 'text-[8px]'
+				} md:text-[16px]`}
 			>
 				<div
 					className={
 						'font-druk w-full box-border px-[10px] md:px-[30px] py-[10px] md:py-[20px]'
 					}
 				>
-					<h3 className={'text-[11px] lg:text-[18px] '}>
+					<h3
+						className={`lg:text-[20px] ${
+							document.documentElement.classList.contains('ios')
+								? 'text-[25px]'
+								: 'text-[11px]'
+						}`}
+					>
 						{' '}
 						Ця послуга включає повний процес створення чат-БОТА, який
 						відповідатиме конкретним потребам вашого бізнесу:
@@ -50,10 +60,20 @@ const Answers = () => {
 			<FaqItem
 				title={'Бізнес під ключ Website + Chatbot + CRM'}
 				hexagon={'hexagon'}
-				styles1={'answer-btn-bg text-[8px] md:text-[16px]'}
+				styles1={`answer-btn-bg ${
+					document.documentElement.classList.contains('ios')
+						? 'text-[15px]'
+						: 'text-[8px]'
+				} md:text-[16px]`}
 			>
 				<div className={'font-druk'}>
-					<h3 className={'text-[12px] lg:text-[20px] '}>
+					<h3
+						className={`lg:text-[20px] ${
+							document.documentElement.classList.contains('ios')
+								? 'text-[25px]'
+								: 'text-[11px]'
+						}`}
+					>
 						{' '}
 						Ця послуга надає комплексний підхід до створення бізнесу з повного
 						нуля до готового сервісу:
@@ -90,7 +110,11 @@ const Answers = () => {
 			<FaqItem
 				title={'БОТИ ayma tech'}
 				hexagon={'hexagon'}
-				styles1={'answer-btn-bg text-[8px] md:text-[16px]'}
+				styles1={`answer-btn-bg ${
+					document.documentElement.classList.contains('ios')
+						? 'text-[15px]'
+						: 'text-[8px]'
+				} md:text-[16px]`}
 			>
 				<div
 					className={

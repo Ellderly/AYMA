@@ -43,6 +43,11 @@ export default {
 				ptMono: ['pt-mono'],
 				kleemax: ['kleemax'],
 			},
+			fontSize: {
+				'sm-ios': '18px',
+				'sm-android': '11px',
+				// Добавьте другие размеры текста по аналогии
+			},
 			backgroundPosition: {
 				'max-left-bottom': '-150px 200px',
 			},

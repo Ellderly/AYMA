@@ -14,13 +14,11 @@ const Dropdown = ({ title, children, isOpen, toggleDropdown }) => {
 				{title}
 			</button>
 			<div
-				className={`mt-2 ml-8 text-[11px] lg:text-[16px] text-green lg:absolute lg:right-[80px] lg:top-0 lg:w-[400px] lg:text-right lg:h-[300px] justify-between ${
+				className={`mt-2 ml-8 text-sm-android ios:text-sm-ios lg:text-[16px] text-green font-druk lg:absolute lg:right-[80px] lg:top-0 lg:w-[400px] lg:text-right lg:h-[300px] justify-between ${
 					isOpen ? 'flex flex-col gap-2' : 'hidden'
 				}`}
 				dangerouslySetInnerHTML={{ __html: children }}
-			>
-				{/* {children} */}
-			</div>
+			></div>
 		</div>
 	)
 }
@@ -107,11 +105,6 @@ const Services = () => {
 						isOpen={activeDropdown === service.description.name}
 						toggleDropdown={() => toggleDropdown(service.description.name)}
 					>
-						{/* <div
-						dangerouslySetInnerHTML={{
-							__html: service.description.description,
-						}}
-					/> */}
 						{service.description.description}
 					</Dropdown>
 				))}

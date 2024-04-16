@@ -4,7 +4,7 @@ import Home from './components/screens/home/Home'
 import Services from './components/screens/service/Service'
 
 import Router from './components/UI/Router/Router'
-import { createContext, useState, useRef } from 'react'
+import { createContext, useState, useRef, useEffect } from 'react'
 import Modal from './components/modal/Modal'
 import Privacy from './components/screens/privacy/Privacy'
 import Terms from './components/screens/terms/Terms'
@@ -15,6 +15,17 @@ export const MenuPopUp = createContext()
 function App() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const [modal, setModal] = useState(false)
+
+	useEffect(() => {
+		const userAgent = navigator.userAgent || navigator.vendor || window.opera
+		const root = document.documentElement
+
+		if (/android/i.test(userAgent)) {
+			root.classList.add('android')
+		} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+			root.classList.add('ios')
+		}
+	}, [])
 
 	return (
 		<div
